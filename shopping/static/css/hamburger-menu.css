@@ -3,6 +3,7 @@
   z-index: 9;
   width: 15%;
   background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 3rem;
 }
 
 .hamburger-menu .hamburger-items {

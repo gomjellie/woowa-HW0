@@ -1,6 +1,6 @@
 
 .navigator {
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 3rem 0;
 }
 
 .navigator .navigator-items {
@@ -9,7 +9,6 @@
   align-items: center;
   justify-items: center;
   height: 3rem;
-  /* background-color: aliceblue; */
   width: 100%;
 }
 
