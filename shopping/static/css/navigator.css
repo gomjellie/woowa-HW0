@@ -1,0 +1,23 @@
+
+.navigator {
+  margin: 1.5rem 3rem;
+}
+
+.navigator .navigator-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 3rem;
+  /* background-color: aliceblue; */
+  width: 100%;
+}
+
+.navigator .navigator-items .navigator-item {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.navigator .navigator-items .navigator-item:hover {
+  color: rgb(228, 93, 116);
+}
