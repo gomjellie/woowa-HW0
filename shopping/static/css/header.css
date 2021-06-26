@@ -1,0 +1,45 @@
+.app-header {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.app-header .header-main-logo img {
+  display: block;
+  height: 3.5rem;
+}
+
+.app-header .header-search-input-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  right: 50px;
+  height: 2rem;
+  width: 190px;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #d9d9d9;
+}
+
+.app-header .header-search-input-wrapper input {
+  width: 80%;
+  outline: 0;
+  border: none;
+
+  font-size: 0.8rem;
+}
+
+.app-header .header-search-input-wrapper input::placeholder {
+  color: #d9d9d9;
+}
+
+.app-header .header-search-input-wrapper img {
+  display: block;
+  height: 13px;
+}
