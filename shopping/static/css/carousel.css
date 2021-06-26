@@ -1,0 +1,31 @@
+
+#carousel {
+  overflow: hidden;
+}
+
+#carousel figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 9s carousel infinite;
+}
+
+
+#carousel figure img {
+  width: 20%;
+  height: 25rem;
+  float: left;
+}
+
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  33% {
+    left: -100%;
+  }
+  66% {
+    left: -200%;
+  }
+}

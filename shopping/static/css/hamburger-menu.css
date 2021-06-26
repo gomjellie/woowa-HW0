@@ -1,6 +1,6 @@
 .hamburger-menu {
   position: absolute;
-  margin-left: 1rem;
+  z-index: 9;
   width: 15%;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 25rem;
 }
 
 .hamburger-menu .hamburger-items .hamburger-item {
@@ -16,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   height: 1.8rem;
-  width: 100%;
+  width: calc(100% - 1rem);
   padding-left: 1rem;
   font-size: 0.8rem;
   color: white;
