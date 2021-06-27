@@ -1,432 +1,486 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>윙잇 - No.1 간편식 마켓</title>
+    <link href="./static/css/app.css" rel="stylesheet" />
+    <link href="./static/css/event-banner.css" rel="stylesheet" />
+    <link href="./static/css/session-toolbar.css" rel="stylesheet" />
+    <link href="./static/css/header.css" rel="stylesheet" />
+    <link href="./static/css/navigator.css" rel="stylesheet" />
+    <link href="./static/css/hamburger-menu.css" rel="stylesheet" />
+    <link href="./static/css/carousel.css" rel="stylesheet" />
+    <link href="./static/css/home-content.css" rel="stylesheet" />
+    <link href="./static/css/divider.css" rel="stylesheet" />
+    <link href="./static/css/footer.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>윙잇 - No.1 간편식 마켓</title>
-  <link href="./static/css/app.css" rel="stylesheet">
-  <link href="./static/css/event-banner.css" rel="stylesheet">
-  <link href="./static/css/session-toolbar.css" rel="stylesheet">
-  <link href="./static/css/header.css" rel="stylesheet">
-  <link href="./static/css/navigator.css" rel="stylesheet">
-  <link href="./static/css/hamburger-menu.css" rel="stylesheet">
-  <link href="./static/css/carousel.css" rel="stylesheet">
-  <link href="./static/css/home-content.css" rel="stylesheet">
-  <link href="./static/css/divider.css" rel="stylesheet">
-</head>
+  <body class="app">
+    <a href="#">
+      <div class="event-banner">혜택 먼저 챙기세요!</div>
+    </a>
 
-<body class="app">
-  <a href="#">
-    <div class="event-banner">
-      혜택 먼저 챙기세요!
-    </div>
-  </a>
-
-  <div class="session-toolbar">
-    <div class="session-notice">
-      고객센터 1599-3108 (평일 | 오전 9시 ~ 오후 5시 (주말 및 공휴 휴무), 점심시간 | 오후 12시 ~ 오후 1시)
-    </div>
-    <div class="session-buttons">
-      <span>
-        장바구니
-      </span>&nbsp;
-      <span>
-        로그인
-      </span>&nbsp;
-      <span>
-        회원가입
-      </span>
-    </div>
-  </div>
-  <div class="app-header">
-    <div class="header-main-logo">
-      <img src="./static/assets/we_logo_center.png" />
-    </div>
-    <div class="header-search-input-wrapper">
-      <input placeholder="랠리닭가슴살소시지" />
-      <img src="./static/assets/search.png">
-    </div>
-  </div>
-  <nav class="navigator">
-    <div class="navigator-items">
-      <div class="navigator-item">전체 카테고리</div>
-      <div class="navigator-item">베스트</div>
-      <div class="navigator-item">알뜰쇼핑</div>
-      <div class="navigator-item">신상품</div>
-      <div class="navigator-item">이벤트</div>
-      <div class="navigator-item">전체상품</div>
-    </div>
-  </nav>
-  <nav class="hamburger-menu">
-    <div class="hamburger-items">
-      <div class="hamburger-item">기획전</div>
-      <div class="hamburger-item">식단관리</div>
-      <div class="hamburger-item">국 밥 면</div>
-      <div class="hamburger-item">간식</div>
-      <div class="hamburger-item">떡</div>
-      <div class="hamburger-item">육류 계란</div>
-      <div class="hamburger-item">베이커리</div>
-      <div class="hamburger-item">밀키트</div>
-      <div class="hamburger-item">분식 튀김</div>
-      <div class="hamburger-item">수산</div>
-      <div class="hamburger-item">반찬 소스</div>
-      <div class="hamburger-item">음료 유제품</div>
-      <div class="hamburger-item">리빙</div>
-    </div>
-  </nav>
-  <section id="carousel">
-    <figure>
-      <img src="static/assets/slide1.jpg" id="carousel-slide1" class="carousel-slide">
-      <img src="static/assets/slide2.jpg" id="carousel-slide2" class="carousel-slide">
-      <img src="static/assets/slide3.jpg" id="carousel-slide3" class="carousel-slide">
-    </figure>
-  </section>
-
-  <div class="divider-small"></div>
-
-  <section class="home-content">
-    <h2>🏆상반기 감사제 베스트 상품 특가</h2>
-    <h3>최대 35% 할인+2시간 타임 쿠폰💸</h3>
-    <h2 class="home-content-progress">1 / 3</h3>
-    <div class="item-cards">
-      <div class="item-card">
-        <img src="static/assets/item1.jpg" />
-        <div class="item-card-title">[고른] 프리미엄 양념 LA갈비 (750g / 1.5kg)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            19,837원
-            <strike class="item-card-price-original">23,900원</strike>
-          </span>
-          <span class="item-card-price-discount">-17%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
+    <div class="session-toolbar">
+      <div class="session-notice">
+        고객센터 1599-3108 (평일 | 오전 9시 ~ 오후 5시 (주말 및 공휴 휴무),
+        점심시간 | 오후 12시 ~ 오후 1시)
       </div>
-      <div class="item-card">
-        <img src="static/assets/item2.jpg" />
-        <div class="item-card-title">[★최대 30% 할인] [써드베이커리] 냉동생지 4종(크루아상, 갈릭파이, 소세지롤, AOP뺑오쇼콜라)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            5,530원
-            <strike class="item-card-price-original">6,144원</strike>
-          </span>
-          <span class="item-card-price-discount">-10%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/item3.jpg" />
-        <div class="item-card-title">[페이보잇] 떡볶이 (2인분, 육수포함)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            3,900원
-            <strike class="item-card-price-original">5,900원</strike>
-          </span>
-          <span class="item-card-price-discount">-34%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/item4.jpeg" />
-        <div class="item-card-title">크림치즈를 품은 딸기찹쌀떡</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            6,430원
-            <strike class="item-card-price-original">9,900원</strike>
-          </span>
-          <span class="item-card-price-discount">-35%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
+      <div class="session-buttons">
+        <span> 장바구니 </span>&nbsp; <span> 로그인 </span>&nbsp;
+        <span> 회원가입 </span>
       </div>
     </div>
-  </section>
-  
-  <div class="divider-midium"></div>
+    <div class="app-header">
+      <div class="header-main-logo">
+        <img src="./static/assets/we_logo_center.png" />
+      </div>
+      <div class="header-search-input-wrapper">
+        <input placeholder="랠리닭가슴살소시지" />
+        <img src="./static/assets/search.png" />
+      </div>
+    </div>
+    <nav class="navigator">
+      <div class="navigator-items">
+        <div class="navigator-item">전체 카테고리</div>
+        <div class="navigator-item">베스트</div>
+        <div class="navigator-item">알뜰쇼핑</div>
+        <div class="navigator-item">신상품</div>
+        <div class="navigator-item">이벤트</div>
+        <div class="navigator-item">전체상품</div>
+      </div>
+    </nav>
+    <nav class="hamburger-menu">
+      <div class="hamburger-items">
+        <div class="hamburger-item">기획전</div>
+        <div class="hamburger-item">식단관리</div>
+        <div class="hamburger-item">국 밥 면</div>
+        <div class="hamburger-item">간식</div>
+        <div class="hamburger-item">떡</div>
+        <div class="hamburger-item">육류 계란</div>
+        <div class="hamburger-item">베이커리</div>
+        <div class="hamburger-item">밀키트</div>
+        <div class="hamburger-item">분식 튀김</div>
+        <div class="hamburger-item">수산</div>
+        <div class="hamburger-item">반찬 소스</div>
+        <div class="hamburger-item">음료 유제품</div>
+        <div class="hamburger-item">리빙</div>
+      </div>
+    </nav>
+    <section id="carousel">
+      <figure>
+        <img
+          src="static/assets/slide1.jpg"
+          id="carousel-slide1"
+          class="carousel-slide"
+        />
+        <img
+          src="static/assets/slide2.jpg"
+          id="carousel-slide2"
+          class="carousel-slide"
+        />
+        <img
+          src="static/assets/slide3.jpg"
+          id="carousel-slide3"
+          class="carousel-slide"
+        />
+      </figure>
+    </section>
 
-  <section class="home-content">
-    <h2>식단 관리 오늘부터 1일💙</h2>
-    <h3>🎾 닭가슴살부터 도시락까지 최대 34% 할인!</h3>
-    <h2 class="home-content-progress">1 / 3</h3>
-    <div class="item-cards">
-      <div class="item-card">
+    <div class="divider-small"></div>
+
+    <section class="home-content">
+      <h2>🏆상반기 감사제 베스트 상품 특가</h2>
+      <h3>최대 35% 할인+2시간 타임 쿠폰💸</h3>
+      <h2 class="home-content-progress">1 / 3</h2>
+      <div class="item-cards">
+        <div class="item-card">
+          <img src="static/assets/item1.jpg" />
+          <div class="item-card-title">
+            [고른] 프리미엄 양념 LA갈비 (750g / 1.5kg)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              19,837원
+              <strike class="item-card-price-original">23,900원</strike>
+            </span>
+            <span class="item-card-price-discount">-17%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/item2.jpg" />
+          <div class="item-card-title">
+            [★최대 30% 할인] [써드베이커리] 냉동생지 4종(크루아상, 갈릭파이,
+            소세지롤, AOP뺑오쇼콜라)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              5,530원
+              <strike class="item-card-price-original">6,144원</strike>
+            </span>
+            <span class="item-card-price-discount">-10%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/item3.jpg" />
+          <div class="item-card-title">[페이보잇] 떡볶이 (2인분, 육수포함)</div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              3,900원
+              <strike class="item-card-price-original">5,900원</strike>
+            </span>
+            <span class="item-card-price-discount">-34%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/item4.jpeg" />
+          <div class="item-card-title">크림치즈를 품은 딸기찹쌀떡</div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              6,430원
+              <strike class="item-card-price-original">9,900원</strike>
+            </span>
+            <span class="item-card-price-discount">-35%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-midium"></div>
+
+    <section class="home-content">
+      <h2>식단 관리 오늘부터 1일💙</h2>
+      <h3>🎾 닭가슴살부터 도시락까지 최대 34% 할인!</h3>
+      <h2 class="home-content-progress">1 / 3</h2>
+      <div class="item-cards">
+        <div class="item-card">
+          <img src="static/assets/diet1.jpg" />
+          <div class="item-card-title">
+            [★10팩 9,900원] 랠리 닭가슴살 소시지
+            4종(오리지널/매콤청양/허브갈릭/더블치즈)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              990원
+              <strike class="item-card-price-original">1,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-34%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/diet2.jpg" />
+          <div class="item-card-title">
+            랠리 닭가슴살 볼 4종(오리지널/땡초/마늘/깻잎)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              990원
+              <strike class="item-card-price-original">1,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-34%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/diet3.jpg" />
+          <div class="item-card-title">
+            [★최대 30% 할인] 랠리 오븐 닭가슴살
+            4종(플레인/블랙페퍼/소이갈릭/숯불바비큐)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              1,990원
+              <strike class="item-card-price-original">2,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-20%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/diet4.jpg" />
+          <div class="item-card-title">
+            [★최대 21% 할인] 랠리 흑미곤약도시락 7종
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              4,275원
+              <strike class="item-card-price-original">4,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-5%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+      </div>
+      <div class="divider-small"></div>
+      <a href="#" class="home-content-button-wrapper">
+        <div class="home-content-more-btn">
+          식단 관리 오늘부터 1일 💙 더보기
+        </div>
+      </a>
+    </section>
+
+    <div class="divider-midium"></div>
+
+    <section class="home-content">
+      <h2>신상품 런칭 특가</h2>
+      <h3>뽀드득! 입안에서 터지는 육즙과 촉촉한 식감 ✨</h3>
+      <div class="single-item">
         <img src="static/assets/diet1.jpg" />
-        <div class="item-card-title">[★10팩 9,900원] 랠리 닭가슴살 소시지 4종(오리지널/매콤청양/허브갈릭/더블치즈)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            990원
-            <strike class="item-card-price-original">1,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-34%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/diet2.jpg" />
-        <div class="item-card-title">랠리 닭가슴살 볼 4종(오리지널/땡초/마늘/깻잎)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            990원
-            <strike class="item-card-price-original">1,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-34%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
+        <div class="single-item-info-wrapper">
+          <div class="single-item-info">
+            <div class="single-item-title">
+              [★10팩 9,900원] 랠리 닭가슴살 소시지
+              4종(오리지널/매콤청양/허브갈릭/더블치즈)
+            </div>
+          </div>
+          <div class="single-item-price">
+            <span class="single-item-price-offer">
+              990원
+              <strike class="single-item-price-original">1,500원</strike>
+            </span>
+            <span class="single-item-price-discount">-34%</span>
+          </div>
+          <div class="single-item-footer">
+            <span class="single-item-delivery">윙잇배송</span>
+            <span class="single-item-coupon">쿠폰</span>
+          </div>
         </div>
       </div>
-      <div class="item-card">
-        <img src="static/assets/diet3.jpg" />
-        <div class="item-card-title">[★최대 30% 할인] 랠리 오븐 닭가슴살 4종(플레인/블랙페퍼/소이갈릭/숯불바비큐)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            1,990원
-            <strike class="item-card-price-original">2,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-20%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/diet4.jpg" />
-        <div class="item-card-title">[★최대 21% 할인] 랠리 흑미곤약도시락 7종</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            4,275원
-            <strike class="item-card-price-original">4,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-5%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-    </div>
-    <div class="divider-small"></div>
-    <a href="#" class="home-content-button-wrapper">
-      <div class="home-content-more-btn">
-        식단 관리 오늘부터 1일 💙 더보기
-      </div>
-    </a>
-  </section>
+    </section>
 
-  <div class="divider-midium"></div>
+    <div class="divider-midium"></div>
 
-  <section class="home-content">
-    <h2>신상품 런칭 특가</h2>
-    <h3>뽀드득! 입안에서 터지는 육즙과 촉촉한 식감 ✨</h3>
-    <div class="single-item">
-      <img src="static/assets/diet1.jpg" />
-      <div class="single-item-info-wrapper">
-        <div class="single-item-info">
-          <div class="single-item-title">[★10팩 9,900원] 랠리 닭가슴살 소시지 4종(오리지널/매콤청양/허브갈릭/더블치즈)</div>
-        <div class="single-item-price">
-          <span class="single-item-price-offer">
-            990원
-            <strike class="single-item-price-original">1,500원</strike>
-          </span>
-          <span class="single-item-price-discount">-34%</span>
+    <section class="home-content">
+      <h2>신상품</h2>
+      <h2 class="home-content-progress">1 / 3</h2>
+      <div class="item-cards">
+        <div class="item-card">
+          <img src="static/assets/new1.jpg" />
+          <div class="item-card-title">
+            [★소스 무료증정] 푸드렐라 닭다리살 순살치킨 (오븐구이/치어스, 300g)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              6,210원
+              <strike class="item-card-price-original">6,900원</strike>
+            </span>
+            <span class="item-card-price-discount">-10%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
         </div>
-        <div class="single-item-footer">
-          <span class="single-item-delivery">윙잇배송</span>
-          <span class="single-item-coupon">쿠폰</span>
+        <div class="item-card">
+          <img src="static/assets/new2.jpg" />
+          <div class="item-card-title">
+            아임얼라이브 유기농 콤부차 4종 (320ml,
+            오리지날/애플베리/석류/진저레몬)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              3,300원
+              <strike class="item-card-price-original">3,800원</strike>
+            </span>
+            <span class="item-card-price-discount">-13%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-delivery">2000원 적립</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/new3.jpeg" />
+          <div class="item-card-title">生그대로 썰어 말린 고구마 말랭이</div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              2,160원
+              <strike class="item-card-price-original">2,400원</strike>
+            </span>
+            <span class="item-card-price-discount">-10%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-delivery">2000원 적립</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="static/assets/new4.jpg" />
+          <div class="item-card-title">
+            떠먹는 케이크 (딸기생크림/오레오생크림/당근)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              5,890원
+              <strike class="item-card-price-original">6,550원</strike>
+            </span>
+            <span class="item-card-price-discount">-10%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-delivery">2000원 적립</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="divider-small"></div>
+      <a href="#" class="home-content-button-wrapper">
+        <div class="home-content-more-btn">신상품 더보기</div>
+      </a>
+    </section>
 
-  <div class="divider-midium"></div>
+    <div class="divider-large"></div>
 
-  <section class="home-content">
-    <h2>신상품</h2>
-    <h2 class="home-content-progress">1 / 3</h3>
-    <div class="item-cards">
-      <div class="item-card">
-        <img src="static/assets/new1.jpg" />
-        <div class="item-card-title">[★소스 무료증정] 푸드렐라 닭다리살 순살치킨 (오븐구이/치어스, 300g)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            6,210원
-            <strike class="item-card-price-original">6,900원</strike>
-          </span>
-          <span class="item-card-price-discount">-10%</span>
+    <section class="home-content">
+      <h2>실시간 판매 순위</h2>
+      <h2 class="home-content-progress">1 / 3</h2>
+      <div class="item-cards">
+        <div class="item-card">
+          <span class="best accent">BEST 1</span>
+          <img src="static/assets/diet2.jpg" />
+          <div class="item-card-title">
+            랠리 닭가슴살 볼 4종(오리지널/땡초/마늘/깻잎)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              990원
+              <strike class="item-card-price-original">1,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-34%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
         </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
+        <div class="item-card">
+          <span class="best accent">BEST 2</span>
+          <img src="static/assets/diet3.jpg" />
+          <div class="item-card-title">
+            [★최대 30% 할인] 랠리 오븐 닭가슴살
+            4종(플레인/블랙페퍼/소이갈릭/숯불바비큐)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              1,990원
+              <strike class="item-card-price-original">2,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-20%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <span class="best accent">BEST 3</span>
+          <img src="static/assets/item1.jpg" />
+          <div class="item-card-title">
+            [고른] 프리미엄 양념 LA갈비 (750g / 1.5kg)
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              19,837원
+              <strike class="item-card-price-original">23,900원</strike>
+            </span>
+            <span class="item-card-price-discount">-17%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
+        </div>
+        <div class="item-card">
+          <span class="best">BEST 4</span>
+          <img src="static/assets/diet4.jpg" />
+          <div class="item-card-title">
+            [★최대 21% 할인] 랠리 흑미곤약도시락 7종
+          </div>
+          <div class="item-card-price">
+            <span class="item-card-price-offer">
+              4,275원
+              <strike class="item-card-price-original">4,500원</strike>
+            </span>
+            <span class="item-card-price-discount">-5%</span>
+          </div>
+          <div class="item-card-footer">
+            <span class="item-card-delivery">윙잇배송</span>
+            <span class="item-card-coupon">쿠폰</span>
+          </div>
         </div>
       </div>
-      <div class="item-card">
-        <img src="static/assets/new2.jpg" />
-        <div class="item-card-title">아임얼라이브 유기농 콤부차 4종 (320ml, 오리지날/애플베리/석류/진저레몬)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            3,300원
-            <strike class="item-card-price-original">3,800원</strike>
-          </span>
-          <span class="item-card-price-discount">-13%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-delivery">2000원 적립</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/new3.jpeg" />
-        <div class="item-card-title">生그대로 썰어 말린 고구마 말랭이</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            2,160원
-            <strike class="item-card-price-original">2,400원</strike>
-          </span>
-          <span class="item-card-price-discount">-10%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-delivery">2000원 적립</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <img src="static/assets/new4.jpg" />
-        <div class="item-card-title">떠먹는 케이크 (딸기생크림/오레오생크림/당근)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            5,890원
-            <strike class="item-card-price-original">6,550원</strike>
-          </span>
-          <span class="item-card-price-discount">-10%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-delivery">2000원 적립</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-    </div>
-    <div class="divider-small"></div>
-    <a href="#" class="home-content-button-wrapper">
-      <div class="home-content-more-btn">
-        신상품 더보기
-      </div>
-    </a>
-  </section>
+    </section>
 
-  <div class="divider-large"></div>
+    <div class="divider-large"></div>
 
-  <section class="home-content">
-    <h2>실시간 판매 순위</h2>
-    <h2 class="home-content-progress">1 / 3</h3>
-    <div class="item-cards">
-      <div class="item-card">
-        <span class="best accent">BEST 1</span>
-        <img src="static/assets/diet2.jpg" />
-        <div class="item-card-title">랠리 닭가슴살 볼 4종(오리지널/땡초/마늘/깻잎)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            990원
-            <strike class="item-card-price-original">1,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-34%</span>
+    <section class="home-content">
+      <h2>베스트 후기</h2>
+      <div class="divider-xsmall"></div>
+      <div class="review-items">
+        <div class="review-item">
+          <img src="static/assets/review1.jpeg" />
+          <div class="review-infos">
+            <div class="review-title">[고른] 한우 사골 도가니탕 (700g)</div>
+            <div class="review-content">
+              아침은 단백질 가득 든든한 도가니탕 ! 사골 국물이 진하구요 시중에
+              파는 도가니탕은 사실 도가니 특유의 비린내가 나는데 이건 너무
+              깔끔하고 맛있어요. 도가니 양도 정말 많아요. 한팩 사면 2인 기준
+              도가니 그득 먹을수 있습니다. 추천합미당
+            </div>
+          </div>
         </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <span class="best accent">BEST 2</span>
-        <img src="static/assets/diet3.jpg" />
-        <div class="item-card-title">[★최대 30% 할인] 랠리 오븐 닭가슴살 4종(플레인/블랙페퍼/소이갈릭/숯불바비큐)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            1,990원
-            <strike class="item-card-price-original">2,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-20%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
+        <div class="review-item">
+          <img src="static/assets/review2.jpeg" />
+          <div class="review-infos">
+            <div class="review-title">
+              [써드베이커리] 베이글 (통밀/쌀두부/쌀올리브)
+            </div>
+            <div class="review-content">
+              다이어트식으로 최고에요 쫄깃하고 칼로리도 부담 없네요^^
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item-card">
-        <span class="best accent">BEST 3</span>
-        <img src="static/assets/item1.jpg" />
-        <div class="item-card-title">[고른] 프리미엄 양념 LA갈비 (750g / 1.5kg)</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            19,837원
-            <strike class="item-card-price-original">23,900원</strike>
-          </span>
-          <span class="item-card-price-discount">-17%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-      <div class="item-card">
-        <span class="best">BEST 4</span>
-        <img src="static/assets/diet4.jpg" />
-        <div class="item-card-title">[★최대 21% 할인] 랠리 흑미곤약도시락 7종</div>
-        <div class="item-card-price">
-          <span class="item-card-price-offer">
-            4,275원
-            <strike class="item-card-price-original">4,500원</strike>
-          </span>
-          <span class="item-card-price-discount">-5%</span>
-        </div>
-        <div class="item-card-footer">
-          <span class="item-card-delivery">윙잇배송</span>
-          <span class="item-card-coupon">쿠폰</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <div class="divider-large"></div>
+    </section>
 
-  <section class="home-content">
-    <h2>베스트 후기</h2>
-    <div class="divider-xsmall"></div>
-    <div class="review-items">
-      <div class="review-item">
-        <img src="static/assets/review1.jpeg" />
-        <div class="review-infos">
-          <div class="review-title">[고른] 한우 사골 도가니탕 (700g)</div>
-          <div class="review-content">아침은 단백질 가득 든든한 도가니탕 ! 사골 국물이 진하구요 시중에 파는 도가니탕은 사실 도가니 특유의 비린내가 나는데 이건 너무 깔끔하고 맛있어요. 도가니 양도 정말 많아요. 한팩 사면 2인 기준 도가니 그득 먹을수 있습니다. 추천합미당</div>
-        </div>
-      </div>
-      <div class="review-item">
-        <img src="static/assets/review2.jpeg" />
-        <div class="review-infos">
-          <div class="review-title">[써드베이커리] 베이글 (통밀/쌀두부/쌀올리브)</div>
-          <div class="review-content">다이어트식으로 최고에요 쫄깃하고 칼로리도 부담 없네요^^</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="divider-large"></div>
 
-  <div class="divider-large"></div>
-</body>
-
+    <footer class="footer">
+      <h3 class="company-name">주식회사 아그레아블</h3>
+      <div class="company-infos">
+        <div>대표이사: 김땡땡 | 사업자등록번호: xxx-xx-xxxxx</div>
+        <div>통신판매업신고: xxxx-xxx-xxxx | 주소: 서울특별시 xx구 xx동</div>
+        <div>전화번호: xxxx-xxxx | 팩스: xx-xxxx</div>
+      </div>
+    </footer>
+  </body>
 </html>
