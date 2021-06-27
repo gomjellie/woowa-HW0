@@ -47,7 +47,6 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 22rem;
   gap: 1rem;
 }
 
@@ -112,6 +111,101 @@
 }
 
 .home-content .item-cards .item-card .item-card-footer .item-card-coupon {
+  color: white;
+  font-weight: 300;
+  padding: 2px;
+  background-color: orangered;
+}
+
+.home-content .single-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 0.6rem;
+  width: calc(100% - 1.5rem);
+  height: 16rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  padding: 0.6rem;
+}
+
+.home-content .single-item img {
+  display: block;
+  height: 100%;
+
+  border-radius: 0.6rem;
+}
+
+.home-content .single-item .single-item-info-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: aquamarine; */
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  width: 70%;
+  height: 50%;
+  /* background-color: lightblue; */
+}
+
+
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  /* line limit: 1 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-price {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-price .single-item-price-offer {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-price .single-item-price-offer strike {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-price .single-item-price-discount {
+  font-size: 1.4rem;
+  color: orangered;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-footer {
+  height: 1rem;
+  font-size: 0.7rem;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-footer .single-item-delivery {
+  color: orangered;
+  font-weight: 300;
+  padding: 2px;
+  border: 1px solid orangered;
+}
+
+.home-content .single-item .single-item-info-wrapper .single-item-info .single-item-footer .single-item-coupon {
   color: white;
   font-weight: 300;
   padding: 2px;
