@@ -1,4 +1,4 @@
-import "../types.js";
+import "../typedef.js";
 
 /**
  * @returns {String}

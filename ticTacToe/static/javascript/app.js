@@ -1,4 +1,4 @@
-import "./types.js";
+import "./typedef.js";
 
 import Header from "./view/header.js";
 import Score from "./view/score.js";
