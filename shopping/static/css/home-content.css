@@ -106,8 +106,8 @@
 .home-content .item-cards .item-card .item-card-footer .item-card-delivery {
   color: orangered;
   font-weight: 300;
-  padding: 2px;
-  border: 1px solid orangered;
+  padding: 2px 3px;
+  border: 0.5px solid orangered;
 }
 
 .home-content .item-cards .item-card .item-card-footer .item-card-coupon {
