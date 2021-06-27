@@ -14,3 +14,7 @@
 /**
  * @typedef { {score: TypeScore, board: TypeBoard} } TypeRootState
  */
+
+/**
+ * @typedef { (targetElement: Element, state: TypeRootState) => Element } TypeComponent
+ */
