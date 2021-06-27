@@ -33,7 +33,7 @@ const add = (name, component) => {
 
 /**
  * @param {Element} root
- * @param {TypeRootState} state
+ * @param {TypeStateRoot} state
  * @returns {Element}
  */
 const renderRoot = (root, state) => {

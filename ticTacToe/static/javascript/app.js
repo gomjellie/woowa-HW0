@@ -6,15 +6,15 @@ import Score from "./view/score.js";
 import applyDiff from "./applyDiff.js";
 import registry from "./registry.js";
 
-/** @type {TypeRootState} */
+/** @type {TypeStateRoot} */
 const state = {
-  /** @type {TypeBoard} */
+  /** @type {TypeStateBoard} */
   board: [
     ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
   ],
-  /** @type {TypeScore} */
+  /** @type {TypeStateScore} */
   score: {
     score1: 1,
     score2: 0,

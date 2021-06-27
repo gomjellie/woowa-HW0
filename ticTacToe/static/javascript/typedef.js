@@ -1,6 +1,6 @@
 
 /**
- * @typedef {{score1: Number, score2: Number}} TypeScore - 점수 상태를 저장하는 자료형
+ * @typedef {{score1: Number, score2: Number}} TypeStateScore - 점수 상태를 저장하는 자료형
  */
 
 /**
@@ -8,13 +8,13 @@
  */
 
 /**
- * @typedef { Array.<Array.<TypeBlock>> } TypeBoard
+ * @typedef { Array.<Array.<TypeBlock>> } TypeStateBoard
  */
 
 /**
- * @typedef { {score: TypeScore, board: TypeBoard} } TypeRootState
+ * @typedef { {score: TypeStateScore, board: TypeStateBoard} } TypeStateRoot
  */
 
 /**
- * @typedef { (targetElement: Element, state: TypeRootState) => Element } TypeComponent
+ * @typedef { (targetElement: Element, state: TypeStateRoot) => Element } TypeComponent
  */

@@ -1,7 +1,7 @@
 import "../typedef.js";
 
 /**
- * @param {TypeScore} state
+ * @param {TypeStateScore} state
  * @returns {String}
  */
 const getScoreElement = (state) => {
@@ -13,7 +13,7 @@ const getScoreElement = (state) => {
 
 /**
  * @param {Element} targetElement
- * @param {TypeRootState} state
+ * @param {TypeStateRoot} state
  * @returns {Element}
  */
 const Score = (targetElement, state) => {

@@ -11,7 +11,7 @@ const getHeaderElement = () => {
 
 /**
  * @param {Element} targetElement 
- * @param {TypeRootState} state
+ * @param {TypeStateRoot} state
  * @returns {Element}
  */
 const Header = (targetElement, state) => {
