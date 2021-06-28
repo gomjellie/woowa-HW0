@@ -12,6 +12,7 @@ const getScoreElement = (state) => {
 };
 
 /**
+ * @type {TypeFC}
  * @param {Element} targetElement
  * @param {TypeStateRoot} state
  * @returns {Element}

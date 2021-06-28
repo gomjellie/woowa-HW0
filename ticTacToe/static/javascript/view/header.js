@@ -10,6 +10,7 @@ const getHeaderElement = () => {
 }
 
 /**
+ * @type {TypeFC}
  * @param {Element} targetElement 
  * @param {TypeStateRoot} state
  * @returns {Element}

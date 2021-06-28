@@ -16,5 +16,5 @@
  */
 
 /**
- * @typedef { (targetElement: Element, state: TypeStateRoot) => Element } TypeComponent
+ * @typedef { (targetElement: Element, state: TypeStateRoot) => Element } TypeFC
  */

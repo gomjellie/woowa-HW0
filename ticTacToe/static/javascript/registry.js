@@ -2,8 +2,8 @@ import "./typedef.js";
 const registry = {};
 
 /**
- * @param {TypeComponent} component
- * @returns {TypeComponent}
+ * @param {TypeFC} component
+ * @returns {TypeFC}
  */
 const renderWrapper = (component) => {
   return (targetElement, state) => {
@@ -25,7 +25,7 @@ const renderWrapper = (component) => {
 
 /**
  * @param {String} name
- * @param {TypeComponent} component
+ * @param {TypeFC} component
  */
 const add = (name, component) => {
   registry[name] = renderWrapper(component);
