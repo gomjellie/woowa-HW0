@@ -1,0 +1,49 @@
+import "../typedef.js";
+
+/**
+ * @param {TypeStateRoot} state
+ * @returns {Element[]}
+ */
+const getBoardElements = (state) => {
+  const { board } = state;
+  
+  const rows = board.map((row, i) => {
+    const $div = document.createElement("div");
+    $div.classList.add("row");
+
+    const cells = row.map((block, j) => {
+      const $span = document.createElement("span");
+      $span.classList.add("cell");
+      if (block === "Empty") {
+        $span.textContent = "E";
+        return $span;
+      }
+      $span.textContent = block;
+      return $span;
+    });
+
+    cells.forEach((c) => {
+      $div.appendChild(c);
+    });
+    return $div;
+  });
+  return rows;
+};
+
+/**
+ * @type {TypeFC}
+ * @param {Element} targetElement
+ * @param {TypeStateRoot} state
+ * @returns {Element}
+ */
+const Board = (targetElement, state) => {
+  const newBoard = targetElement.cloneNode(true);
+  newBoard.innerHTML = "";
+  const boards = getBoardElements(state);
+  boards.forEach((b) => {
+    newBoard.appendChild(b);
+  });
+  return newBoard;
+};
+
+export default Board;

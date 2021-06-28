@@ -2,6 +2,7 @@ import "./typedef.js";
 
 import Header from "./view/header.js";
 import Score from "./view/score.js";
+import Board from "./view/board.js";
 
 import applyDiff from "./applyDiff.js";
 import registry from "./registry.js";
@@ -23,6 +24,7 @@ const state = {
 
 registry.add("header", Header);
 registry.add("score", Score);
+registry.add("board", Board);
 
 const render = () => {
   window.requestAnimationFrame(() => {
@@ -32,8 +34,16 @@ const render = () => {
   });
 };
 
+// const getBoard = () => {
+//   return [
+//     ["X", "X", "X"],
+//     ["X", "X", "X"],
+//     ["X", "X", "X"],
+//   ];
+// }
+
 // window.setInterval(() => {
-//   // state.board = getBoard();
+//   state.board = getBoard();
 //   render();
 // }, 1000);
 
