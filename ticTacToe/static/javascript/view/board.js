@@ -6,7 +6,7 @@ import "../typedef.js";
  */
 const getBoardElements = (state) => {
   const { board } = state;
-  
+
   const rows = board.map((row, i) => {
     const $div = document.createElement("div");
     $div.classList.add("row");
@@ -14,8 +14,12 @@ const getBoardElements = (state) => {
     const cells = row.map((block, j) => {
       const $span = document.createElement("span");
       $span.classList.add("cell");
+      $span.addEventListener("click", () => {
+        board[i][j] = "X";
+        console.table(board);
+      });
       if (block === "Empty") {
-        $span.textContent = "E";
+        $span.textContent = " ";
         return $span;
       }
       $span.textContent = block;

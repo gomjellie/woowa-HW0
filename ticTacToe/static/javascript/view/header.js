@@ -5,7 +5,7 @@ import "../typedef.js";
  */
 const getHeaderElement = () => {
   return `
-  <h1>Tic Tac Toe</h1>
+  <h1>TIC TAC TOE</h1>
   `;
 }
 

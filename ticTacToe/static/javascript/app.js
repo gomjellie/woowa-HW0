@@ -9,13 +9,11 @@ import registry from "./registry.js";
 
 /** @type {TypeStateRoot} */
 const state = {
-  /** @type {TypeStateBoard} */
   board: [
-    ["Empty", "Empty", "Empty"],
+    ["Empty", "X", "O"],
     ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
   ],
-  /** @type {TypeStateScore} */
   score: {
     score1: 1,
     score2: 0,
@@ -34,17 +32,8 @@ const render = () => {
   });
 };
 
-// const getBoard = () => {
-//   return [
-//     ["X", "X", "X"],
-//     ["X", "X", "X"],
-//     ["X", "X", "X"],
-//   ];
-// }
-
-// window.setInterval(() => {
-//   state.board = getBoard();
-//   render();
-// }, 1000);
+window.addEventListener("click", () => {
+  render();
+})
 
 render();
