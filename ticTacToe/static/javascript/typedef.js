@@ -12,7 +12,7 @@
  */
 
 /**
- * @typedef { {score: TypeStateScore, board: TypeStateBoard} } TypeStateRoot
+ * @typedef { {score: TypeStateScore, board: TypeStateBoard, stone: TypeBlock} } TypeStateRoot
  */
 
 /**

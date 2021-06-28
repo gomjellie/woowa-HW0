@@ -15,8 +15,15 @@ const getBoardElements = (state) => {
       const $span = document.createElement("span");
       $span.classList.add("cell");
       $span.addEventListener("click", () => {
-        board[i][j] = "X";
+        // board[i][j] = "X";
         console.table(board);
+        const newEvent = new CustomEvent("BlockClick", {
+          detail: {
+            y: i,
+            x: j,
+          }
+        });
+        window.dispatchEvent(newEvent);
       });
       if (block === "Empty") {
         $span.textContent = " ";

@@ -10,7 +10,7 @@ import registry from "./registry.js";
 /** @type {TypeStateRoot} */
 const state = {
   board: [
-    ["Empty", "X", "O"],
+    ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
   ],
@@ -18,6 +18,7 @@ const state = {
     score1: 1,
     score2: 0,
   },
+  stone: "X",
 };
 
 registry.add("header", Header);
@@ -32,8 +33,17 @@ const render = () => {
   });
 };
 
-window.addEventListener("click", () => {
+/**
+ * @param {CustomEvent} BlockClickEvent
+ */
+const onBlockClick = (blockClickEvent) => {
+  /** @type {{y: TypeBlock, x:TypeBlock}}*/
+  const { y, x } = blockClickEvent.detail;
+  state.board[y][x] = state.stone;
+  state.stone = state.stone === "X" ? "O" : "X";
   render();
-})
+};
+
+window.addEventListener("BlockClick", onBlockClick);
 
 render();
