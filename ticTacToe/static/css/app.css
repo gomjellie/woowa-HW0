@@ -34,8 +34,8 @@ body {
 
   align-items: center;
   justify-content: space-evenly;
-  width: 50%;
-  height: 50%;
+  width: 50vw;
+  height: 50vw;
 }
 
 .board .row {
@@ -59,4 +59,12 @@ body {
 
   background-color: cadetblue;
   border: 1px solid burlywood;
+}
+
+.board .row .cell.X {
+  color: whitesmoke;
+}
+
+.board .row .cell.O {
+  color: teal;
 }

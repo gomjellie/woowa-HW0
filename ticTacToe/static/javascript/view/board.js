@@ -23,6 +23,7 @@ const getBoardElements = (state) => {
         return $span;
       }
       $span.textContent = block;
+      $span.classList.add(block);
       return $span;
     });
 
