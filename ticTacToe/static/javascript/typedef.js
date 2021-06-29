@@ -4,7 +4,7 @@
  */
 
 /**
- * @typedef { "Empty" | "O" | "X" } TypeBlock
+ * @typedef { " " | "O" | "X" } TypeBlock
  */
 
 /**

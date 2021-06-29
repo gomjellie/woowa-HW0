@@ -21,15 +21,12 @@ const getBoardElements = (state) => {
           detail: {
             y: i,
             x: j,
-          }
+          },
         });
         window.dispatchEvent(newEvent);
       });
-      if (block === "Empty") {
-        $span.textContent = " ";
-        return $span;
-      }
-      $span.textContent = block;
+
+      $span.textContent = block === "Empty" ? " " : block;
       $span.classList.add(block);
       return $span;
     });

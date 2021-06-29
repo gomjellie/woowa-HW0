@@ -19,8 +19,12 @@ body {
 }
 
 .header {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
+  width: 80%;
+  border-bottom: 1px dotted burlywood;
 }
 
 .score {
@@ -55,16 +59,26 @@ body {
 
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 5rem;
+  user-select: none;
 
   background-color: cadetblue;
   border: 1px solid burlywood;
 }
 
+.board .row .cell.Empty {
+  cursor: pointer;
+  content: " ";
+}
+
 .board .row .cell.X {
   color: whitesmoke;
+  user-select: none;
+  cursor: not-allowed;
 }
 
 .board .row .cell.O {
   color: teal;
+  user-select: none;
+  cursor: not-allowed;
 }

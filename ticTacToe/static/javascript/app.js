@@ -39,7 +39,10 @@ const render = () => {
 const onBlockClick = (blockClickEvent) => {
   /** @type {{y: TypeBlock, x:TypeBlock}}*/
   const { y, x } = blockClickEvent.detail;
+  if (state.board[y][x] !== "Empty") return;
+
   state.board[y][x] = state.stone;
+
   state.stone = state.stone === "X" ? "O" : "X";
   render();
 };
