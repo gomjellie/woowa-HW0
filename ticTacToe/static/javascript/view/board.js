@@ -53,4 +53,12 @@ const Board = (targetElement, state) => {
   return newBoard;
 };
 
+/** @type {TypeStateBoard} */
+const initialState = [
+  ["Empty", "Empty", "Empty"],
+  ["Empty", "Empty", "Empty"],
+  ["Empty", "Empty", "Empty"],
+];
+
 export default Board;
+export { initialState };

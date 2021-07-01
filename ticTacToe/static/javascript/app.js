@@ -2,18 +2,15 @@ import "./typedef.js";
 
 import Header from "./view/header.js";
 import Score from "./view/score.js";
-import Board from "./view/board.js";
+import Board, { initialState as boardInitialState } from "./view/board.js";
+import Buttons from "./view/buttons.js";
 
 import applyDiff from "./applyDiff.js";
 import registry from "./registry.js";
 
 /** @type {TypeStateRoot} */
 const state = {
-  board: [
-    ["Empty", "Empty", "Empty"],
-    ["Empty", "Empty", "Empty"],
-    ["Empty", "Empty", "Empty"],
-  ],
+  board: JSON.parse(JSON.stringify(boardInitialState)),
   boardHistory: [],
   score: {
     x: 0,
@@ -26,6 +23,7 @@ const state = {
 registry.add("header", Header);
 registry.add("score", Score);
 registry.add("board", Board);
+registry.add("buttons", Buttons);
 
 const render = () => {
   window.requestAnimationFrame(() => {
@@ -83,6 +81,25 @@ const onBlockClick = (blockClickEvent) => {
   render();
 };
 
+/**
+ * @param {CustomEvent} evt 
+ */
+const onNewGameClick = (evt) => {
+  state.finished = false;
+  state.board = JSON.parse(JSON.stringify(boardInitialState.slice()));
+
+  render();
+}
+
+/**
+ * @param {CustomEvent} evt 
+ */
+const onCancleClick = (evt) => {
+  console.log("cancle");
+}
+
 window.addEventListener("BlockClick", onBlockClick);
+window.addEventListener("NewGameClick", onNewGameClick);
+window.addEventListener("CancleClick", onCancleClick);
 
 render();
