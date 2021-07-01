@@ -8,6 +8,7 @@ import Buttons from "./view/buttons.js";
 import applyDiff from "./applyDiff.js";
 import registry from "./registry.js";
 import tools from "./tools.js";
+import TurnIndicator from "./view/turnIndicator.js";
 
 /** @type {TypeStateRoot} */
 const state = {
@@ -25,6 +26,7 @@ registry.add("header", Header);
 registry.add("score", Score);
 registry.add("board", Board);
 registry.add("buttons", Buttons);
+registry.add("turnIndicator", TurnIndicator);
 
 const render = () => {
   window.requestAnimationFrame(() => {
@@ -35,7 +37,7 @@ const render = () => {
 };
 
 /**
- * @param {TypeStateBoard} board
+ * @param {TypeBlock} board
  */
 const isGameEnded = (board) => {
   const lines = [
@@ -96,7 +98,16 @@ const onNewGameClick = (evt) => {
  * @param {CustomEvent} evt
  */
 const onCancleClick = (evt) => {
-  console.log("cancle");
+  if (state.finished) {
+    alert("게임이 끝났을때는 무르기 못합니다");
+    return;
+  }
+  if (state.boardHistory.length === 0)
+    return;
+  state.board = state.boardHistory.pop();
+  state.stone = state.stone === "X" ? "O" : "X";
+
+  render();
 };
 
 window.addEventListener("BlockClick", onBlockClick);

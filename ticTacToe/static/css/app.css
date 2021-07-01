@@ -28,8 +28,21 @@ body {
 }
 
 .score {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin: 0.6rem 0;
   color: whitesmoke;
+}
+
+.turnIndicator {
+  padding-bottom: 0.6rem;
+}
+
+.turnIndicator .X {
+  color: whitesmoke;
+}
+
+.turnIndicator .O {
+  color: teal;
 }
 
 .board {

@@ -1,13 +1,13 @@
 import "../typedef.js";
 
 /**
- * @param {TypeStateScore} state
+ * @param {TypeStateStone} state
  * @returns {String}
  */
 const getScoreElement = (state) => {
   const {x, o} = state;
   return `
-  <h2>${x} : ${o}</h2>
+  <div>X ${x}승 vs O ${o}승</div>
   `;
 };
 
