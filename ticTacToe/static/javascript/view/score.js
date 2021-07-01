@@ -5,9 +5,9 @@ import "../typedef.js";
  * @returns {String}
  */
 const getScoreElement = (state) => {
-  const {score1, score2} = state;
+  const {x, o} = state;
   return `
-  <h2>${score1} : ${score2}</h2>
+  <h2>${x} : ${o}</h2>
   `;
 };
 

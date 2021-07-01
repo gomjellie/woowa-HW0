@@ -14,11 +14,13 @@ const state = {
     ["Empty", "Empty", "Empty"],
     ["Empty", "Empty", "Empty"],
   ],
+  boardHistory: [],
   score: {
-    score1: 1,
-    score2: 0,
+    x: 0,
+    o: 0,
   },
   stone: "X",
+  finished: false,
 };
 
 registry.add("header", Header);
@@ -34,14 +36,49 @@ const render = () => {
 };
 
 /**
+ * @param {TypeStateBoard} board
+ */
+const isGameEnded = (board) => {
+  const lines = [
+    /* 가로 */
+    [...board[0]],
+    [...board[1]],
+    [...board[2]],
+    /* 세로 */
+    [board[0][0], board[1][0], board[2][0]],
+    [board[0][1], board[1][1], board[2][1]],
+    [board[0][2], board[1][2], board[2][2]],
+    /* 대각선 */
+    [board[0][0], board[1][1], board[2][2]],
+    [board[0][2], board[1][1], board[2][0]],
+  ];
+
+  for (const line of lines) {
+    const lineStr = line.join("");
+    if (["XXX", "OOO"].includes(lineStr)) {
+      return true;
+    }
+  }
+  console.table(lines);
+  return false;
+};
+
+/**
  * @param {CustomEvent} BlockClickEvent
  */
 const onBlockClick = (blockClickEvent) => {
   /** @type {{y: TypeBlock, x:TypeBlock}}*/
   const { y, x } = blockClickEvent.detail;
   if (state.board[y][x] !== "Empty") return;
+  if (state.finished) return;
+
+  state.boardHistory.push(state.board);
 
   state.board[y][x] = state.stone;
+  if (isGameEnded(state.board)) {
+    state.finished = true;
+    state.score[state.stone.toLowerCase()] ++;
+  }
 
   state.stone = state.stone === "X" ? "O" : "X";
   render();

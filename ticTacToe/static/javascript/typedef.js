@@ -1,10 +1,9 @@
-
 /**
- * @typedef {{score1: Number, score2: Number}} TypeStateScore - 점수 상태를 저장하는 자료형
+ * @typedef {{x: Number, o: Number}} TypeStateScore
  */
 
 /**
- * @typedef { " " | "O" | "X" } TypeBlock
+ * @typedef { "Empty" | "O" | "X" } TypeBlock
  */
 
 /**
@@ -12,7 +11,13 @@
  */
 
 /**
- * @typedef { {score: TypeStateScore, board: TypeStateBoard, stone: TypeBlock} } TypeStateRoot
+ * @typedef { {
+ *  score: TypeStateScore,
+ *  board: TypeStateBoard,
+ *  boardHistory: Array.<TypeStateBoard>,
+ *  stone: TypeBlock,
+ *  finished: Boolean,
+ * } } TypeStateRoot
  */
 
 /**
