@@ -11,7 +11,7 @@ HTML, CSS로 레이아웃을 동일하게 만들어야 합니다.
 - CSS의 position, float, flex 속성을 사용해서, 화면 레이아웃을 구성할 수 있어야 합니다.
 - CSS의 캐스캐이딩, 상속, box-model 개념을 이해합니다.
 
-[내 과제 결과물](https://wingeat.surge.sh)
+[wingeat.surge.sh](https://wingeat.surge.sh)
 
 ## JavaScript 연습과제
 
@@ -22,6 +22,8 @@ HTML, CSS로 레이아웃을 동일하게 만들어야 합니다.
 - ES Classes 로 클래스를 만들 줄 압니다.
 - 비동기에 대한 이해가 있습니다.
 - DOM, Event의 기본 API를 이해합니다.
+
+[gomjellie-tictactoe.surge.sh](https://gomjellie-tictactoe.surge.sh)
 
 ## Node.js와 백엔드 과제
 
