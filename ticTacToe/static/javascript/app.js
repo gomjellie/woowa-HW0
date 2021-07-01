@@ -7,10 +7,11 @@ import Buttons from "./view/buttons.js";
 
 import applyDiff from "./applyDiff.js";
 import registry from "./registry.js";
+import tools from "./tools.js";
 
 /** @type {TypeStateRoot} */
 const state = {
-  board: JSON.parse(JSON.stringify(boardInitialState)),
+  board: tools.deepCopy(boardInitialState),
   boardHistory: [],
   score: {
     x: 0,
@@ -69,12 +70,12 @@ const onBlockClick = (blockClickEvent) => {
   if (state.board[y][x] !== "Empty") return;
   if (state.finished) return;
 
-  state.boardHistory.push(state.board);
+  state.boardHistory.push(tools.deepCopy(state.board));
 
   state.board[y][x] = state.stone;
   if (isGameEnded(state.board)) {
     state.finished = true;
-    state.score[state.stone.toLowerCase()] ++;
+    state.score[state.stone.toLowerCase()]++;
   }
 
   state.stone = state.stone === "X" ? "O" : "X";
@@ -82,21 +83,21 @@ const onBlockClick = (blockClickEvent) => {
 };
 
 /**
- * @param {CustomEvent} evt 
+ * @param {CustomEvent} evt
  */
 const onNewGameClick = (evt) => {
   state.finished = false;
-  state.board = JSON.parse(JSON.stringify(boardInitialState.slice()));
+  state.board = tools.deepCopy(boardInitialState.slice());
 
   render();
-}
+};
 
 /**
- * @param {CustomEvent} evt 
+ * @param {CustomEvent} evt
  */
 const onCancleClick = (evt) => {
   console.log("cancle");
-}
+};
 
 window.addEventListener("BlockClick", onBlockClick);
 window.addEventListener("NewGameClick", onNewGameClick);
