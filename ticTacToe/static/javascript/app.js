@@ -37,7 +37,7 @@ const render = () => {
 };
 
 /**
- * @param {TypeBlock} board
+ * @param {TypeStateBoard} board
  */
 const isGameEnded = (board) => {
   const lines = [
