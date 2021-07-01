@@ -59,7 +59,6 @@ const isGameEnded = (board) => {
       return true;
     }
   }
-  console.table(lines);
   return false;
 };
 
