@@ -89,7 +89,8 @@ const onBlockClick = (blockClickEvent) => {
  */
 const onNewGameClick = (evt) => {
   state.finished = false;
-  state.board = tools.deepCopy(boardInitialState.slice());
+  state.board = tools.deepCopy(boardInitialState);
+  state.boardHistory = [];
 
   render();
 };
